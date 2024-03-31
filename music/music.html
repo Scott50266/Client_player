@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/div.css">
+</head>
+<body>  
+    <div id="background" class="diagonal box by-pixel">
+        <div class="all_type">
+            <div class="music_data">
+                <div id="play">
+                    <div class="play_change" id="play_change1" onclick="change_Previous_song()"><img class="change_ico" id="change_ico1" src="img/angle-left.png" alt=""></div>
+                    <video id="play_" controls="" src="" >
+                    </video>
+                    <div class="play_change" id="play_change2" onclick="change_next_song()"><img class="change_ico" id="change_ico2" src="img/angle-right.png" alt=""></div>
+                </div>
+                <!--  -->      
+            </div>
+            <div id="playlist_div" class="focus_div default_div">
+                <img id="play_ui_delete" src="img/cancelled-options.png" alt="">
+                <img id="play_ui_shuffle" src="img/shuffle.png" alt="">
+                <img id="play_ui_arrows" src="img/arrows-repeat.png" alt="">
+                <p id="at_play" class="p_230x">Playlist</p>
+                <ul id="playlist">    
+                </ul>
+                <br>
+                <img id="play_ui_all_delete" src="img/delete.png" alt="">
+            </div>
+            <div id="music_view">
+               
+                <label for="music_file"><div  id="op_files_button">
+                    <img src="img/upload.png" id="upload">
+                </div></label>   
+                <div onclick="clear_files()" id="clear_files_button">
+                    <img src="img/cross.png" id="cross">
+                </div>        
+                <input type="file" webkitdirectory="true" id="music_file" onchange="on_files()">
+                <div id="music_list">
+    
+                </div>  
+            </div>
+           
+        </div>
+    </div>
+</body>
+<script src="script/music.js"></script>
+</html>

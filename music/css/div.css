@@ -1,0 +1,261 @@
+:root{
+
+}
+
+.diagonal { 
+    background-image: repeating-linear-gradient(
+      45deg,    
+      var(--color1, #363636), 
+      var(--color1, #363636) var(--stripe-width, 30px), 
+      var(--color2, #363636) var(--stripe-width, 30px), 
+      var(--color2, #363636) calc(var(--stripe-width, 30px) * 2)
+    );
+}
+.box{ --color1: hsl(198, 68%, 22%); }
+
+.by-pixel { --stripe-width: 50px; }
+  
+h3{ 
+    color:aliceblue;
+}
+li{
+    margin:10px;
+    color:aliceblue;
+}
+
+body{
+    min-height: 100vh;
+    max-height: 100vh;
+    /* background-color: rgb(66, 64, 158); */
+}
+
+
+/* #meun{
+    display: none;
+    margin: auto;
+    width: 90%;
+    background-color: aquamarine;
+}
+.meum_ico{
+    width: 70px;
+    height: 70px;
+    margin-left: 10%;
+} */
+.focus_div:hover{
+    background-color:rgba(255, 255, 255, 0.2); 
+}
+.default_div{
+    background-color:rgba(255, 255, 255, 0.1); 
+}
+.default_ico{
+    width: 5%;
+    height: 5%;
+}
+
+
+.all_type {
+    
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    grid-template-areas:
+        'music_data music_view'
+        'playlist_div music_view'; 
+    /* grid-template-rows: 50px 1fr 30px; */
+    grid-template-columns: 80% 20%;
+}
+
+.music_data {
+    grid-area: music_data;   
+    min-height: 70vh;
+    max-height: 70vh;   
+    /* background-color: darkmagenta; */
+}
+.files_txt{
+
+}
+.music_file_open{
+    width: 90%;
+    background-color: rgb(255, 255, 255,0.1);
+    border-radius: 10px;
+}
+.files_list_txt{
+    padding: 5px;
+    border-radius:0,0,10px,10px;
+    color:aliceblue;
+}
+
+.p_230x{
+    font-size:230%;
+    color:aliceblue;
+}
+.p_150x{
+    font-size:150%;
+    color:aliceblue;
+}
+.p_170x{
+    font-size:170%;
+    color:aliceblue;
+}
+.vertical_align{
+    vertical-align: text-top;
+}
+.line_height120x {
+    line-height:120%;
+}
+.margin5x{
+    margin: 10px;
+}
+.play_change{
+    display: flex;
+    align-items: center;
+    width: 5%;
+    height: 100%;
+}
+.change_ico{
+    visibility :hidden;
+    width: 50%;
+    height: 25%;
+}
+
+.all_add_ico{
+    opacity:0.3;
+    width: 100%;
+    height: 100%;
+
+}
+.all_add_ico:hover{
+    opacity:0.8;
+}
+.music_file_all
+{
+    display: flex;  
+    justify-content: center;    
+    align-items: center;   
+    width: 30%;
+    height: 30%;
+}
+.files_frame{
+    margin-top:1%;
+    display: flex;
+    width: 85%;
+}
+
+
+#music_view {
+    grid-area: music_view;
+    overflow:auto;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;    
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+#music_viod{
+    gap: 5px;
+    height: 500px;
+    background-color: chartreuse;
+} 
+ #play{
+    display: flex;
+    height: 100%;
+    align-items: center;  
+}
+#lyric{
+    gap: 5px;
+    background-color: darkgreen;
+}
+#playlist_div{
+    grid-area: playlist_div;
+    overflow:auto;
+    min-height: 30vh;
+    max-height: 30vh;
+    gap: 5px;
+    padding-right:3%;
+    padding-left:3%;
+    height:100%;
+    width: 80%;
+    border-radius: 10px;
+}
+#music_file{
+    display: none;
+}
+#clear_files_button{
+    display: none;
+    width: 90%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255,0.1);
+}   
+#op_files_button{
+    width: 90%;
+    height: 10%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255,0.1 );
+}
+#upload{
+    display: inline-block;
+    margin: 10px;
+    width: 20%;
+    height: 60%;
+}
+#cross{
+    display: inline-block;
+    margin: 10px;
+    width: 20%;
+    height: 60%;
+}
+#play_{
+    margin: auto;
+    width: 90%;
+    height:100%;
+
+    
+}
+#music_list{
+    border-radius: 1px;
+}
+#play_ui_delete{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: absolute;
+    right: 25%;
+    bottom:15%;
+}
+#play_ui_arrows{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: absolute;
+    right: 25%;
+    bottom:5%;
+}
+#play_ui_shuffle{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: absolute;
+    right: 25%;
+    bottom:5%;
+    visibility:hidden;
+}
+#play_ui_all_delete{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: absolute;
+    right: 25%;
+    bottom:-5%;
+    visibility:hidden;
+}
+
+@media(max-width:850px){
+    #playlist_div{
+        width: 70%;
+    }
+
+}
